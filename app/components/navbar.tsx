@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <header className="relative z-20">
-      <div className="w-full px-4 py-5 sm:px-8 lg:px-16">
+      <div className="w-full  py-5 sm:px-8 lg:px-40">
         <nav className="flex items-center justify-between px-0 py-3 sm:px-2 lg:px-4">
           <div className="flex items-center justify-between w-full gap-4 lg:w-auto">
             <div className="font-heading text-2xl font-semibold tracking-[0.35em] text-white">
