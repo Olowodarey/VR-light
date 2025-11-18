@@ -2,13 +2,19 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="grid gap-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center">
+    <section className="grid gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:px-0">
       <div className="flex flex-col gap-8">
-        <div className="space-y-6">
+        <div className="">
           <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-            Let&apos;s Explore Three-Dimensional Visual
+            Let&apos;s Explore
           </h1>
-          <p className="max-w-xl font-paragraph text-slate-200/80 sm:text-lg">
+          <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+            Three-Dimensional Visual
+          </h1>
+          <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+          Visual
+          </h1>
+          <p className="max-w-xl font-paragraph text-slate-200/80 sm:text-lg mt-10">
             With virtual technology you can see the digital world feel more real
             and you can play the game with a new style.
           </p>
@@ -52,8 +58,18 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center  lg:items-end">
-        <div className="relative left-7 w-[380px] max-w-full sm:w-[320px] lg:w-[530px]">
+      <div className="flex flex-col items-center gap-0 lg:items-end lg:gap-0">
+        <div className=" -ml-[-200px] sm:-ml-12 lg:ml-0">
+          <Image
+            src="/hero/star.png"
+            alt="Hero"
+            width={550}
+            height={500}
+            className="h-auto w-full"
+            priority
+          />
+        </div>
+        <div className="relative  right-3 w-full max-w-[320px] sm:max-w-[360px] md:max-w-[420px] lg:left-7 lg:w-[530px] lg:max-w-none">
           <Image
             src="/hero/vrboy.png"
             alt="Hero"
@@ -63,12 +79,13 @@ const Hero = () => {
             priority
           />
         </div>
-        <div className="w-[380px] max-w-full rounded-b-[200px] h-[390px] bg-[#534686] p-6  text-center sm:w-[320px] lg:w-[450px] -mt-[160px]">
-          <div className="mt-[120px]">
-            <h2 className="font-heading text-2xl leading-tight text-white sm:text-3xl">
+        <div className="w-full max-w-[260px] -mt-25 rounded-b-[200px] bg-[#534686] p-6 text-center sm:max-w-[320px] sm:-mt-20 md:max-w-[360px] lg:w-[450px] lg:max-w-none lg:-mt-[160px] h-[300px] lg:h-[450px]">
+          <div className="flex h-full flex-col items-center pt-12 sm:pt-16 lg:pt-[120px]">
+            <h2 className="font-heading mt-8 text-xl leading-tight text-white sm:mt-5 sm:text-3xl">
               Cinematic Virtual Reality
             </h2>
-            <p className="mt-3 text-sm text-white/80">
+            <div className="mt-4 h-[2px] w-32 rounded-full bg-white/80 sm:w-40 lg:w-48 lg:mt-6" />
+            <p className="mt-6 text-xs leading-relaxed text-white/80 sm:mt-8 sm:text-sm lg:mt-10">
               Let&apos;s be the best for more real and effective results and
               ready to explore the limitless world that we have prepared for
               you.
