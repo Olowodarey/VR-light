@@ -22,30 +22,29 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body), "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family: var(--font-body), "Inter", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
-
 
 .font-paragraph {
   font-family: inherit;
 }
 
 .font-heading {
-  font-family: var(--font-heading), "IM Fell Great Primer SC", Georgia, "Times New Roman",
-    serif;
+  font-family: var(--font-heading), "IM Fell Great Primer SC", Georgia,
+    "Times New Roman", serif;
 }
-
-
-
-
 
 .circle-designtop {
   position: absolute;
   width: min(80vw, 750px);
   height: min(55vw, 500px);
-  background: radial-gradient(circle, rgba(185, 54, 245, 0.4) 0%, rgba(138, 43, 226, 0.3) 30%, transparent 80%);
+  background: radial-gradient(
+    circle,
+    rgba(185, 54, 245, 0.4) 0%,
+    rgba(138, 43, 226, 0.3) 30%,
+    transparent 80%
+  );
   border-radius: 50%;
   top: -220px;
   left: 50%;
@@ -71,7 +70,12 @@ body {
 .circle-designleft {
   top: 460px;
   left: clamp(0px, 6vw, 120px);
-  background: radial-gradient(circle, rgba(185, 7, 245, 0.4) 0%, rgba(40, 10, 80, 0.3) 55%, transparent 85%);
+  background: radial-gradient(
+    circle,
+    rgba(185, 7, 245, 0.4) 0%,
+    rgba(40, 10, 80, 0.3) 55%,
+    transparent 85%
+  );
   transform: rotate(180deg);
   transform-origin: center;
 }
@@ -79,9 +83,20 @@ body {
 .circle-designright {
   bottom: 300px;
   right: clamp(0px, 6vw, 120px);
-  background: radial-gradient(circle,  rgba(185, 43, 226, 0.4) 0%, rgba(89, 40, 126, 0.35) 50%, transparent 85%);
+  background: radial-gradient(
+    circle,
+    rgba(185, 43, 226, 0.4) 0%,
+    rgba(89, 40, 126, 0.35) 50%,
+    transparent 85%
+  );
   transform: rotate(180deg);
   transform-origin: center;
+}
+
+@media (max-width: 1023px) {
+  .circle-designright {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
@@ -90,7 +105,12 @@ body {
     height: 360px;
     top: -200px;
     left: -80px;
-    background: radial-gradient(circle, rgba(185, 54, 245, 0.55) 0%, rgba(138, 43, 226, 0.4) 38%, transparent 82%);
+    background: radial-gradient(
+      circle,
+      rgba(185, 54, 245, 0.55) 0%,
+      rgba(138, 43, 226, 0.4) 38%,
+      transparent 82%
+    );
     filter: blur(32px);
     opacity: 0.9;
   }
