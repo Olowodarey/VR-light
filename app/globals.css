@@ -43,22 +43,24 @@ body {
 
 .circle-designtop {
   position: absolute;
-  width: 750px;
-  height: 500px;
+  width: min(80vw, 750px);
+  height: min(55vw, 500px);
   background: radial-gradient(circle, rgba(185, 54, 245, 0.4) 0%, rgba(138, 43, 226, 0.3) 30%, transparent 80%);
   border-radius: 50%;
-  top: -250px;
-  left: 200px;
+  top: -220px;
+  left: 50%;
   pointer-events: none;
   z-index: 0;
   filter: blur(40px);
+  transform: translateX(-50%) rotate(180deg);
+  transform-origin: center;
 }
 
 .circle-designleft,
 .circle-designright {
   position: absolute;
-  width: 520px;
-  height: 520px;
+  width: min(45vw, 520px);
+  height: min(45vw, 520px);
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -68,14 +70,18 @@ body {
 
 .circle-designleft {
   top: 460px;
-  left: -220px;
-  background: radial-gradient(circle, rgba(120, 43, 226, 0.4) 0%, rgba(40, 10, 80, 0.3) 55%, transparent 85%);
+  left: clamp(0px, 6vw, 120px);
+  background: radial-gradient(circle, rgba(185, 7, 245, 0.4) 0%, rgba(40, 10, 80, 0.3) 55%, transparent 85%);
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 
 .circle-designright {
-  bottom: -90px;
-  right: -260px;
-  background: radial-gradient(circle,  rgba(120, 43, 226, 0.4) 0%, rgba(89, 40, 126, 0.35) 50%, transparent 85%);
+  bottom: 300px;
+  right: clamp(0px, 6vw, 120px);
+  background: radial-gradient(circle,  rgba(185, 43, 226, 0.4) 0%, rgba(89, 40, 126, 0.35) 50%, transparent 85%);
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 
 @media (max-width: 640px) {

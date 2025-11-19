@@ -3,24 +3,24 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="grid gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:px-0">
-      <div className="flex flex-col gap-8">
-        <div className="">
-          <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+      <div className="flex flex-col items-center gap-8 text-center lg:items-start lg:text-left">
+        <div>
+          <h1 className="font-heading text-3xl leading-tight text-white sm:text-5xl lg:text-6xl">
             Let&apos;s Explore
           </h1>
-          <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-            Three-Dimensional Visual
+          <h1 className="font-heading text-3xl leading-tight text-white sm:text-5xl lg:text-6xl">
+            Three-Dimensional 
           </h1>
-          <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="font-heading text-3xl leading-tight text-white sm:text-5xl lg:text-6xl">
           Visual
           </h1>
-          <p className="max-w-xl font-paragraph text-slate-200/80 sm:text-lg mt-10">
+          <p className="max-w-xl  text-sm font-paragraph text-slate-200/80 sm:text-lg mt-10">
             With virtual technology you can see the digital world feel more real
             and you can play the game with a new style.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:justify-start sm:gap-6">
           <button className="rounded-lg bg-linear-to-r from-pink-500 to-purple-500 px-6 py-2 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(225,29,72,0.35)] transition-transform duration-300 hover:scale-[1.03]">
             Get it Now
           </button>
