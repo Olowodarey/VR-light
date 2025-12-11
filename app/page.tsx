@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import Hero2 from "./components/Hero2";
+import Hero3 from "./components/Hero3";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <div className="px-0 sm:px-20 lg:px-30">
           <Hero />
           <Hero2 />
+          <Hero3 />
         </div>
       </main>
 
