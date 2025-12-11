@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 const Hero3 = () => {
   return (
-    <section className="w-full">
-      <div className="flex min-h-screen flex-col justify-center px-4 py-16 sm:px-6 lg:px-12">
+    <section className="relative w-full overflow-hidden">
+      <div className="relative z-10 flex min-h-screen flex-col justify-center px-4 py-16 sm:px-6 lg:px-12">
         <h2 className="font-heading text-xl leading-tight text-white sm:text-3xl">
           Mixed Reality Headsets
         </h2>
@@ -18,10 +18,10 @@ const Hero3 = () => {
             />
             <div className="absolute bottom-0 left-0 w-[65%] max-w-xs   bg-white/10 p-4 text-white shadow-xl backdrop-blur-xl sm:bottom-0 sm:left-0 sm:w-auto sm:max-w-sm sm:p-5 lg:p-6">
               <p className="font-heading text-xs font-bold uppercase  underline tracking-wide text-white/80 sm:text-sm">
-                Metaverse
+              HoloLens
               </p>
               <p className="font-paragraph mt-2 text-[11px] leading-relaxed text-white/70 sm:text-xs">
-                A network of 3D virtual worlds focused on social connection.
+              HoloLens display information, blend with the real world , or even simulate a virtual world. 
               </p>
             </div>
           </div>
@@ -40,14 +40,15 @@ const Hero3 = () => {
                 Aiot
               </p>
               <p className="font-paragraph mt-2 text-[11px] leading-relaxed text-white/70 sm:text-xs">
-              AI and IoT are both emerging innovative technologies with a lot of potentials. 
+                AI and IoT are both emerging innovative technologies with a lot
+                of potentials.
               </p>
             </div>
           </div>
         </div>
 
         <div className="mt-10 grid h-[50vh] w-full grid-cols-1 gap-6 lg:h-[50vh] lg:grid-cols-2">
-        <div className="relative overflow-hidden rounded-t-3xl">
+          <div className="relative overflow-hidden rounded-t-3xl">
             <Image
               src="/hero/vr33.png"
               alt="VR controller"
@@ -57,10 +58,10 @@ const Hero3 = () => {
             />
             <div className="absolute bottom-0 left-0 w-[65%] max-w-xs   bg-white/10 p-4 text-white shadow-xl backdrop-blur-xl sm:bottom-0 sm:left-0 sm:w-auto sm:max-w-sm sm:p-5 lg:p-6">
               <p className="font-heading text-xs font-bold uppercase  underline tracking-wide text-white/80 sm:text-sm">
-                Metaverse
+              TPCASTT
               </p>
               <p className="font-paragraph mt-2 text-[11px] leading-relaxed text-white/70 sm:text-xs">
-                A network of 3D virtual worlds focused on social connection.
+              Method is great to start students reading and inferring with little assistance from the instructor
               </p>
             </div>
           </div>
@@ -83,6 +84,7 @@ const Hero3 = () => {
           </div>
         </div>
       </div>
+      <div className="circle-designright" />
     </section>
   );
 };

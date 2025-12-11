@@ -42,7 +42,7 @@ const Hero2 = () => {
           </button>
         </div>
       </div>
-      <div className="mt-16 flex w-full justify-center">
+      <div className="relative mt-16 flex w-full justify-center">
         <div
           className="flex w-full max-w-8xl flex-col-reverse items-center gap-6 rounded-[28px] border border-purple-400/50 bg-linear-to-r from-[#4f3c9a]/80 to-[#5c46b4]/80 p-6 text-center shadow-[0_18px_40px_rgba(58,36,115,0.35)] sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-8 sm:text-left"
           style={{
@@ -67,8 +67,9 @@ const Hero2 = () => {
             />
           </div>
         </div>
+        <div className="circle-designright pointer-events-none" />
       </div>
-      <div className="circle-designright" />
+    
     </section>
   );
 };
