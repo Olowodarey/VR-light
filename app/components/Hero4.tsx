@@ -36,54 +36,54 @@ const testimonials = [
 
 const Hero4 = () => {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-20 sm:px-6 lg:px-12">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="h-[520px] w-[92%] rounded-[32px] bg-[#534686]" />
-      </div>
+    <section className="relative w-full px-4 py-12 sm:px-6 sm:py-16 lg:px-12">
+      <div className="mx-auto w-[92%] max-w-7xl">
+        <div className="relative flex min-h-[420px] flex-col justify-between rounded-[32px] bg-gradient-to-b from-[#4F3C9A] to-[#2C174E] px-5 py-8 text-center text-white sm:px-10 sm:py-10 md:h-[420px]">
+          <div className="flex flex-col items-center gap-2 sm:gap-3">
+            <span className="font-heading text-xs uppercase tracking-[0.4em] text-purple-300/70 sm:text-sm">
+              Testimonials
+            </span>
+            <h2 className="font-heading text-2xl leading-tight sm:text-4xl lg:text-5xl">
+              What our clients say
+            </h2>
+            <p className="max-w-2xl text-xs font-paragraph text-slate-200/80 sm:text-sm">
+              See what our customer say about us. It really matter for us. How good
+              or bad we will make it for evaluation to make EhyalLive better.
+            </p>
+          </div>
 
-      <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center text-center text-white">
-        <span className="font-heading text-sm uppercase tracking-[0.4em] text-purple-300/70">
-          Testimonials
-        </span>
-        <h2 className="mt-4 font-heading text-3xl leading-tight sm:text-5xl">
-          What our clients say
-        </h2>
-        <p className="mt-4 max-w-2xl text-sm font-paragraph text-slate-200/80 sm:text-lg">
-          See what our customer say about us. It really matter for us. How good or
-          bad we will make it for evaluation to make EhyalLive better.
-        </p>
-
-        <div className="mt-14 grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((item) => (
-            <article
-              key={item.id}
-              className={`relative flex h-full flex-col justify-between rounded-[24px] border border-white/10 bg-linear-to-br ${item.gradient} p-6 text-left shadow-[0_18px_40px_RGBA(58,36,115,0.35)] transition-transform duration-300 hover:-translate-y-2`}
-            >
-              <div>
-                <p className="font-heading text-xs uppercase tracking-[0.35em] text-amber-300">
-                  {item.title}
-                </p>
-                <p className="mt-5 text-sm leading-relaxed text-slate-100">
-                  {item.quote}
-                </p>
-              </div>
-              <div className="mt-8 flex items-center gap-3">
-                <div className="relative h-12 w-12 overflow-hidden rounded-full border border-white/20">
-                  <Image
-                    src={item.avatar}
-                    alt={item.name}
-                    fill
-                    className="object-cover"
-                    sizes="48px"
-                  />
-                </div>
+          <div className="mt-6 grid w-full gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((item) => (
+              <article
+                key={item.id}
+                className={`relative flex h-full flex-col justify-between rounded-[24px] border border-white/10 bg-linear-to-br ${item.gradient} p-5 text-left shadow-[0_18px_40px_RGBA(58,36,115,0.35)] transition-transform duration-300 hover:-translate-y-2 sm:p-6`}
+              >
                 <div>
-                  <p className="font-heading text-sm text-white">{item.name}</p>
-                  <p className="text-xs text-pink-200">{item.handle}</p>
+                  <p className="font-heading text-xs uppercase tracking-[0.35em] text-amber-300 sm:text-sm">
+                    {item.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-100 sm:mt-4">
+                    {item.quote}
+                  </p>
                 </div>
-              </div>
-            </article>
-          ))}
+                <div className="mt-5 flex items-center gap-3 sm:mt-6">
+                  <div className="relative h-12 w-12 overflow-hidden rounded-full border border-white/20">
+                    <Image
+                      src={item.avatar}
+                      alt={item.name}
+                      fill
+                      className="object-cover"
+                      sizes="48px"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-heading text-sm text-white">{item.name}</p>
+                    <p className="text-xs text-pink-200">{item.handle}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>
